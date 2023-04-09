@@ -1,8 +1,7 @@
 # 3D-
 3d旋转相册，不是我写的
 
-在这个界面下https://github.com/sanghuang/3D- 点击Code,然后在git clone 后面加上
-    https://github.com/sanghuang/3D-.git 就行
+直接点击Code，接着点Download,最后解压 双击bg里的index.html就行
    
-点击bg里的index.html就能运行
+
 
