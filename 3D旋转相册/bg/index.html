@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>星火背景</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background-color: #000000;
+            min-height: 98vh;
+            perspective: 1500px;
+        }
+        /* 设置背景样式 */
+        
+        div#bgDIV {
+            width: 100vw;
+            height: 98vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        
+        section {
+            position: relative;
+            /*top: 200px;
+            left: 650px;
+           */
+            margin: 60px auto;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: rotate 8s linear infinite;
+        }
+        
+        @keyframes circle {
+            0% {
+                transform: rotateX(-30deg) rotateZ(-30deg) rotateY(0);
+            }
+            30% {
+                transform: rotateX(-30deg) rotateZ(-30deg) rotateY(360deg);
+            }
+            100% {
+                transform: rotateX(-30deg) rotateZ(-30deg) rotateY(720deg);
+            }
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotateX(0) rotateY(0) rotateZ(0);
+            }
+            100% {
+                transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+            }
+        }
+        
+        section div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* 外圈 */
+        
+        section div:nth-child(1) {
+            background: url(../imges/1.jpg);
+            background-size: 100%;
+            transform: rotateY(60deg) translateZ(173.2px);
+            transition: all 2s;
+            border-radius: 10px;
+            opacity: .5;
+        }
+        
+        section:hover div:nth-child(1) {
+            background: url(../imges/1.jpg);
+            background-size: 100%;
+            box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4;
+            transform: rotateY(60deg) translateZ(250px);
+            transition: all 2s;
+            opacity: .8;
+            border-radius: 10px;
+        }
+        
+        section div:nth-child(2) {
+            background: url(../imges/2.jpg);
+            background-size: 100%;
+            transform: rotateY(120deg) translateZ(173.2px);
+            border-radius: 10px;
+            opacity: .5;
+            transition: all 2s;
+        }
+        
+        section:hover div:nth-child(2) {
+            background: url(../imges/2.jpg);
+            background-size: 100%;
+            box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4;
+            transform: rotateY(120deg) translateZ(250px);
+            opacity: .8;
+            border-radius: 10px;
+            transition: all 2s;
+        }
+        
+        section div:nth-child(3) {
+            background: url(../imges/3.jpg);
+            background-size: 100%;
+            transform: rotateY(180deg) translateZ(173.2px);
+            border-radius: 10px;
+            opacity: .5;
+            transition: all 2s;
+        }
+        
+        section:hover div:nth-child(3) {
+            background: url(../imges/3.jpg);
+            box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4;
+            background-size: 100%;
+            transform: rotateY(180deg) translateZ(250px);
+            opacity: .8;
+            border-radius: 10px;
+            transition: all 2s;
+        }
+        
+        section div:nth-child(4) {
+            background: url(../imges/4.jpg);
+            background-size: 100%;
+            transform: rotateY(240deg) translateZ(173.2px);
+            border-radius: 10px;
+            opacity: .5;
+            transition: all 2s;
+        }
+        
+        section:hover div:nth-child(4) {
+            background: url(../imges/4.jpg);
+            background-size: 100%;
+            box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4;
+            transform: rotateY(240deg) translateZ(250px);
+            border-radius: 10px;
+            transition: all 2s;
+            opacity: .8;
+        }
+        
+        section div:nth-child(5) {
+            background: url(../imges/5.jpg);
+            background-size: 100%;
+            transform: rotateY(300deg) translateZ(173.2px);
+            border-radius: 10px;
+            opacity: .5;
+            transition: all 2s;
+        }
+        
+        section:hover div:nth-child(5) {
+            background: url(../imges/5.jpg);
+            box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4;
+            background-size: 100%;
+            transform: rotateY(300deg) translateZ(250px);
+            opacity: .8;
+            border-radius: 10px;
+            transition: all 2s;
+        }
+        
+        section div:nth-child(6) {
+            background: url(../imges/6.jpg);
+            background-size: 100%;
+            transform: rotateY(360deg) translateZ(173.2px);
+            border-radius: 10px;
+            opacity: .5;
+            transition: all 2s;
+        }
+        
+        section:hover div:nth-child(6) {
+            background: url(../imges/6.jpg);
+            background-size: 100%;
+            box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4;
+            transform: rotateY(360deg) translateZ(250px);
+            opacity: .8;
+            border-radius: 10px;
+            transition: all 2s;
+        }
+        
+        section div:nth-child(7) {
+            width: 350px;
+            height: 330px;
+            background: url(../imges/7.jpg);
+            background-size: 100%;
+            border-radius: 50%;
+            transform: rotateX(90deg) translate3d(-76px, 0, 165px);
+            opacity: .5;
+            transition: all 2s;
+        }
+        
+        section:hover div:nth-child(7) {
+            width: 350px;
+            height: 330px;
+            background: url(../imges/7.jpg);
+            background-size: 100%;
+            border-radius: 50%;
+            transform: rotateX(90deg) translate3d(-76px, 0, 250px);
+            transition: all 2s;
+            box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4;
+            opacity: .8;
+        }
+        
+        section div:nth-child(8) {
+            width: 350px;
+            height: 330px;
+            background: url(../imges/8.jpg);
+            background-size: 100%;
+            border-radius: 50%;
+            transform: rotateX(90deg) translate3d(-76px, 0, -36px);
+            opacity: .5;
+            transition: all 2s;
+        }
+        
+        section:hover div:nth-child(8) {
+            width: 350px;
+            height: 330px;
+            background: url(../imges/8.jpg);
+            background-size: 100%;
+            border-radius: 50%;
+            transform: rotateX(90deg) translate3d(-76px, 0, -126px);
+            transition: all 2s;
+            box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4;
+            opacity: .8;
+        }
+        /* 内圈 */
+        
+        section div:nth-child(9) {
+            width: 100px;
+            height: 100px;
+            opacity: .7;
+            background: url(../imges/9.jpg);
+            background-size: 100%;
+            transform: rotateY(0deg) translate3d(50px, 50px, 50px);
+            box-shadow: 0 0 5px #b003f4, 0 0 25px #b003f4, 0 0 50px #b003f4;
+        }
+        
+        section div:nth-child(10) {
+            width: 100px;
+            opacity: .7;
+            height: 100px;
+            background: url(../imges/10.jpg);
+            background-size: 100%;
+            box-shadow: 0 0 5px #b003f4, 0 0 25px #b003f4, 0 0 50px #b003f4;
+            transform: rotateY(90deg) translate3d(0, 50px, 100px);
+        }
+        
+        section div:nth-child(11) {
+            width: 100px;
+            opacity: .7;
+            height: 100px;
+            background: url(../imges/11.jpg);
+            background-size: 100%;
+            box-shadow: 0 0 5px #b003f4, 0 0 25px #b003f4, 0 0 50px #b003f4;
+            transform: rotateY(180deg) translate3d(-50px, 50px, 50px);
+        }
+        
+        section div:nth-child(12) {
+            width: 100px;
+            opacity: .7;
+            height: 100px;
+            background: url(../imges/12.jpg);
+            background-size: 100%;
+            box-shadow: 0 0 5px #b003f4, 0 0 25px #b003f4, 0 0 50px #b003f4;
+            transform: rotateY(270deg) translateY(50px);
+        }
+        
+        section div:nth-child(13) {
+            width: 100px;
+            opacity: .7;
+            height: 100px;
+            background: url(../imges/13.jpg);
+            background-size: 100%;
+            box-shadow: 0 0 5px #b003f4, 0 0 25px #b003f4, 0 0 50px #b003f4;
+            transform: rotateX(90deg) translateX(50px);
+        }
+        
+        section div:nth-child(14) {
+            width: 100px;
+            opacity: .7;
+            height: 100px;
+            background: url(../imges/14.jpg);
+            background-size: 100%;
+            box-shadow: 0 0 5px #b003f4, 0 0 25px #b003f4, 0 0 50px #b003f4;
+            transform: rotateX(90deg) translate3d(50px, 0px, -100px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 背景div -->
+    <div id="bgDIV"></div>
+    <section>
+        <!-- 外圈 -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <!-- 内圈 -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+<!-- 背景脚本 -->
+<script src="./myBG.js"></script>
+<script>
+    // 创建对象
+    // 可选参数{
+    //     // 点的信息
+    //     ball_w: 2,    // 宽
+    //     ball_h: 2,    // 高
+    //     ball_color: '0, 117, 183',    // 颜色
+    //     ball_count: 200,    // 数量
+    //     // 线的信息
+    //     line_color: '35, 171, 242',    // 颜色
+    //     line_dist: 10000,    // 连线距离（实际距离的平方值）
+    //     line_conn: 10,    // 数量
+    //     // 鼠标的信息
+    //     e_dist: 16000    // 鼠标吸附加速距离（实际距离的平方值）
+    // }
+    const background = new MyBg({
+        faBoxId: 'bgDIV'
+    });
+    background.CanvasInit();
+</script>
+<script>
+    var section = document.querySelector('section');
+
+    section.addEventListener('mouseover', function() {
+        this.style.animation = 'circle 8s linear infinite';
+
+    })
+    section.addEventListener('mouseout', function() {
+        this.style.animation = 'rotate 8s linear infinite';
+    })
+</script>
+
+</html>
