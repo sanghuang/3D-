@@ -1,5 +1,5 @@
 # 3D-
-不是我写的
+3d旋转相册，不是我写的
 
 在这个界面下https://github.com/sanghuang/3D- 点击Code,然后在git clone 后面加上
     https://github.com/sanghuang/3D-.git 就行
